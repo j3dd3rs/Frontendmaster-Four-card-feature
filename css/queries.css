@@ -1,0 +1,54 @@
+@media (max-width: 66em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Reposition cards */
+  .grid--3-cols div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: stretch;
+  }
+
+  /* Team Builder */
+  .grid--3-cols div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Karma */
+  .grid--3-cols div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* Calculator */
+  .grid--3-cols div:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 45em) {
+  .container {
+    padding: 5rem 0 5rem 0;
+  }
+
+  .header-primary {
+    font-size: 2.8rem;
+  }
+
+  .header-secondary {
+    font-size: 2.8rem;
+  }
+
+  .product-description {
+    max-width: 32rem;
+  }
+
+  .grid--3-cols {
+    display: flex;
+    flex-direction: column;
+  }
+}
